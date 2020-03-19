@@ -3,8 +3,8 @@ import './AddRecipe.css'
 
 export default function AddRecipe(){
   return(
-    <section classNameName="add-recipe">
-      <form classNameName="add-recipe-form">
+    <section className="add-recipe">
+      <form className="add-recipe-form">
         <div className="form-section">
           <label htmlFor="recipe-title">Recipe Title</label>
           <input type="text" name="recipe-title" placeholder="Chicken Picatta" required />

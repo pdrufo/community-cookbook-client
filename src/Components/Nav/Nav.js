@@ -6,7 +6,7 @@ export default function Nav() {
   return (
     <nav>
       <Link to='/recipes'>All Recipes</Link> 
-      <Link to='/'>Home</Link>
+      <Link to='/'>Community Cookbook</Link>
       <Link to='/add-recipe'>Add Recipe</Link>
       
     </nav>

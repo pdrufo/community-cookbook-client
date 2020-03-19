@@ -1,3 +1,31 @@
 .recipe-list-item{
-  margin-top: 100px;
+  padding: 2% 0;
 }
+
+
+/* Add some margins for each label */
+/* .recipe-search-form label {
+  margin: 5px 10px 5px 0;
+} */
+
+/* Style the input fields */
+/* .recipe-search-form input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+} */
+
+/* Style the submit button */
+/* .recipe-search-form button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  border-radius: ;
+  color: white;
+} */
+
+/* .recipe-search-form button:hover {
+  background-color: royalblue;
+} */

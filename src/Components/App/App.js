@@ -17,7 +17,7 @@ class App extends React.Component {
           <Route exact path={'/'} component={LandingPage} />
           <Route exact path={'/recipes'} component={RecipeList} />
           <Route exact path={'/add-recipe'} component={AddRecipe} />
-          <Route path={'/recipes/:id'} component={RecipeDetail} />
+          {/* <Route path={'/recipes/:id'} component={RecipeDetail} /> */}
         <Footer />
       </div>
     );

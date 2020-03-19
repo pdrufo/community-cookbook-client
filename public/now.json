@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "name": "[pdrufo]-community-cookbook-client",
+  "alias": "peter-community-cookbook-client",
+  "name": "community-cookbook-client",
   "routes": [
       { "handle": "filesystem" },
       { "src": "/.*", "dest": "/index.html" }
