@@ -1,8 +1,17 @@
 import React from 'react'
 import RecipeListItem from '../RecipeListItem/RecipeListItem'
 import './RecipeList.css'
+import ApiContext from '../../ApiContext'
 
-export default function RecipeList(){
+
+export default class RecipeList extends React.Component {
+
+  static contextType = ApiContext;
+
+  render() {
+    const recipes = this.context.recipes.map((recipe, idx) =>
+    <RecipeListItem key={idx} data={recipe} />
+    );
   return (
     <div>
     <section className="recipe-search">
@@ -17,9 +26,9 @@ export default function RecipeList(){
       </form>
     </section>
     <section className='recipe-list'>
-      <RecipeListItem  />
-      <RecipeListItem  />
+      {recipes}
     </section>
     </div>
   )
+}
 }
