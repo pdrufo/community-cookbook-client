@@ -1,5 +1,5 @@
 import React from 'react'
-import {findRecipe} from '../../recipe-helpers'
+import { findRecipe } from '../../recipe-helpers'
 import ApiContext from '../../ApiContext'
 
 export default class RecipeDetail extends React.Component{
@@ -18,8 +18,10 @@ handleDeleteRecipe = recipeId => {
 
 render(){
   const { recipes=[] } = this.context
-  const { recipeId } = this.props.match.params
-  const recipe = findRecipe(recipes, recipeId)
+  const { id } = this.props.match.params
+  console.log(recipes)
+  console.log(this.context)
+  const recipe = findRecipe(recipes, id)
   
   return (
     <main className='recipe-detail'>
@@ -27,6 +29,7 @@ render(){
       <h2>{recipe.title}</h2>
     </header>
     <section className="ingredients">
+    <h3>Ingredients</h3>
       <p>
         {recipe.ingredients}
       </p>

@@ -15,11 +15,18 @@ export default class AddRecipe extends React.Component {
   handleSubmit = e => {
     e.preventDefault()
     const newRecipe = {
-      title: e.target['recipe-name'].value,
-      ingedients: e.target['recipe-ingredients'].value,
+      title: e.target['recipe-title'].value,
+      ingredients: e.target['recipe-ingredients'].value,
       instructions: e.target['recipe-instructions'].value,
-      source: e.target['recipe-source'.value]
+      source: e.target['recipe-source'].value
     }
+    console.log(newRecipe.title)
+    console.log(newRecipe.ingredients)
+    console.log(newRecipe.instructions)
+    console.log(newRecipe.source) 
+    console.log(Object.keys(this.context))
+    // this.context.addRecipe(newRecipe)
+
     if (!newRecipe.title || !newRecipe.ingredients || !newRecipe.instructions || !newRecipe.source) {
       alert('Recipe title, ingredients, instructions, and source are all required')
     } else {
@@ -64,8 +71,8 @@ export default class AddRecipe extends React.Component {
         </div>
 
         <div className="form-section">
-          <label htmlFor="recipe-directions">Add Directions</label>
-          <textarea name="recipe-directions"  rows="5"   required></textarea>
+          <label htmlFor="recipe-instructions">Add Instructions</label>
+          <textarea name="recipe-instructions"  rows="5"   required></textarea>
         </div>
 
         <div className="form-section">

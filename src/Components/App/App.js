@@ -35,7 +35,8 @@ class App extends React.Component {
         });
   }
 
-  handleAddRecipe = (newRecipe) => {
+
+  handleAddRecipe = newRecipe => {
     this.setState({
       recipes: [ ...this.state.recipes, newRecipe]
     })
