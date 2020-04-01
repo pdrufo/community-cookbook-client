@@ -1,19 +1,37 @@
 import React from 'react'
 import { findRecipe } from '../../recipe-helpers'
 import ApiContext from '../../ApiContext'
+import config from '../../config'
 
 export default class RecipeDetail extends React.Component{
 static defaultProps = {
   match: {
     params: {
 
-    }
+    },
+    onDeleteRecipe: () => {}
   }
 }
 static contextType = ApiContext;
 
-handleDeleteRecipe = recipeId => {
-  this.props.history.push(`/`)
+handleClickDelete = e => {
+  e.preventDefault()
+  const {id} = this.props.match.params
+
+  fetch(`${config.API_ENDPOINT}/recipes/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'content-type': 'application/json'
+    },
+  })
+    .then(() => {
+      this.context.deleteRecipe(id)
+      this.props.history.push(`/recipes`)
+      
+    })
+    .catch(error => {
+      console.error({error})
+    })
 }
 
 render(){
@@ -46,7 +64,9 @@ render(){
         {recipe.source}
       </p>
     </section>
-
+    <button onClick={this.handleClickDelete} className='recipe__delete' type='button'>
+      delete
+    </button>
   </main>
   )
 }

@@ -8,7 +8,6 @@ export default function Nav() {
       <Link to='/recipes'>All Recipes</Link> 
       <Link to='/'>Community Cookbook</Link>
       <Link to='/add-recipe'>Add Recipe</Link>
-      
     </nav>
   )
 }

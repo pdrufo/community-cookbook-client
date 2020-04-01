@@ -10,7 +10,6 @@ import AddRecipe from '../AddRecipe/AddRecipe'
 import config from '../../config'
 import ApiContext from '../../ApiContext'
 
-
 class App extends React.Component {
 
   state = {
@@ -35,22 +34,23 @@ class App extends React.Component {
         });
   }
 
-
   handleAddRecipe = newRecipe => {
     this.setState({
       recipes: [ ...this.state.recipes, newRecipe]
     })
   }
+
   handleDeleteRecipe = recipeId => {
     this.setState({
       recipes: this.state.recipes.filter(recipe => recipe.id !== recipeId)
     })
   }
+  
   render(){
     const value = {
       recipes: this.state.recipes,
-      addRecipe: this.state.handleAddRecipe,
-      deleteRecipe: this.state.handleDeleteRecipe
+      addRecipe: this.handleAddRecipe,
+      deleteRecipe: this.handleDeleteRecipe
     }
     return (
      <ApiContext.Provider value = {value}>

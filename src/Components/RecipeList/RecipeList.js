@@ -14,18 +14,8 @@ export default class RecipeList extends React.Component {
     );
   return (
     <div>
-    <section className="recipe-search">
-      <form className="recipe-search-form">
-       <div className="form-section">
-          <label htmlFor="recipe-search">Find a recipe:</label>
-          <input type="text" name="recipe-search" />
-       {/* </div>
-       <div className="form-section"> */}
-         <button type="submit">Submit</button>
-      </div>
-      </form>
-    </section>
     <section className='recipe-list'>
+      <h2>All Recipes</h2>
       {recipes}
     </section>
     </div>

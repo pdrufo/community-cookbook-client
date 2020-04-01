@@ -20,13 +20,7 @@ export default class AddRecipe extends React.Component {
       instructions: e.target['recipe-instructions'].value,
       source: e.target['recipe-source'].value
     }
-    console.log(newRecipe.title)
-    console.log(newRecipe.ingredients)
-    console.log(newRecipe.instructions)
-    console.log(newRecipe.source) 
-    console.log(Object.keys(this.context))
-    // this.context.addRecipe(newRecipe)
-
+  
     if (!newRecipe.title || !newRecipe.ingredients || !newRecipe.instructions || !newRecipe.source) {
       alert('Recipe title, ingredients, instructions, and source are all required')
     } else {
