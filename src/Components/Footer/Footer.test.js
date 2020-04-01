@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
 import Footer from './Footer';
-import renderer from 'react-test-renderer'
+
 
 
 describe('Footer' , () => {
@@ -13,10 +13,5 @@ describe('Footer' , () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('renders the UI as expected', () => {
-    const tree = renderer
-      .create(<BrowserRouter><Footer /></BrowserRouter>)
-      .toJSON()
-    expect(tree).toMatchSnapshot();
-  })
+
 })

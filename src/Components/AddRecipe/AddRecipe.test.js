@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
 import AddRecipe from '././AddRecipe';
-import renderer from 'react-test-renderer'
+
 
 
 describe('Add Recipe' , () => {
@@ -14,12 +14,7 @@ describe('Add Recipe' , () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('renders the UI as expected', () => {
-    const tree = renderer
-      .create(<BrowserRouter><AddRecipe /></BrowserRouter>)
-      .toJSON()
-    expect(tree).toMatchSnapshot();
-  })
+ 
 
   
 })

@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
 import LandingPage from './LandingPage';
-import renderer from 'react-test-renderer'
+
 
 
 describe('LandingPage' , () => {
@@ -13,10 +13,5 @@ describe('LandingPage' , () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('renders the UI as expected', () => {
-    const tree = renderer
-      .create(<BrowserRouter><LandingPage /></BrowserRouter>)
-      .toJSON()
-    expect(tree).toMatchSnapshot();
-  })
+  
 })
