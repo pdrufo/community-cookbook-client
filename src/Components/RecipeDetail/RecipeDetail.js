@@ -40,7 +40,6 @@ render(){
   console.log(recipes)
   console.log(this.context)
   const recipe = findRecipe(recipes, id)
-  
   return (
     <main className='recipe-detail'>
     <header>
