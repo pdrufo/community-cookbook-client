@@ -5,7 +5,9 @@ import config from '../../config'
 import './RecipeDetail.css'
 
 export default class RecipeDetail extends React.Component{
-
+state = {
+  recipe: []
+}
   static defaultProps = {
   match: {
     params: {
@@ -25,11 +27,19 @@ componentDidMount() {
     },
   })
     .then(res => res.json())
+    .then((data) => {
+      if (!this.state.recipe) {
+        this.setState({recipe: data})
+       }
+      
+    })
+    
 
     .catch(error => {
       console.error({error})
     })
 }
+
 handleClickDelete = e => {
   e.preventDefault()
   const {id} = this.props.match.params
@@ -55,7 +65,7 @@ render(){
   const { id } = this.props.match.params
   console.log(recipes)
   console.log(this.context)
-  const recipe = findRecipe(recipes, id)
+  const recipe = findRecipe(recipes, id) || this.state.recipe
   return (
     <main className='recipe-detail'>
     <header>
