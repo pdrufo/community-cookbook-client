@@ -1,39 +1,69 @@
-/* 
-.landing-page-container {
-  font-family: "Open Sans",
-  sans-serif; 
-  font-size: 20px;
-  color: #444;
-  text-align: center;
-  line-height: 1.5;
+.hero {
+  margin-top: 20px;
+  padding: 40px;
+  background-color: #2982C2;
+  color: rgb(26, 29, 80);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 14px;
 }
 
-nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
+.hero h1 {
+  font-size: 45px;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 1px 0 black;
+}
+.hero img {
+ width: 50%;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
+.find-recipes {
+  background-color: #1FC2AF;
+  padding: 10px;
+  margin: 5px;
+  transition-duration: 200ms;
 }
 
-
-
-header {
-  padding: 12% 0;
+.find-recipes a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
 }
 
-section {
-  min-height: 200px;
-  padding: 6% 0;
-  background-color: #bbb;
+.find-recipes:hover {
+  transition-duration: 200ms;
+  background-color: #C29F15;
+  box-shadow: 1px 1px 4px grey;
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
-} */
+@media only screen and (min-width: 768px){
+  .hero {
+    height: 86vh;
+  }
+  .hero h1 {
+    margin-top: 150px;
+    font-size: 50px;
+  }
+  .hero img {
+    margin-top: 50px;
+    width: 40%;
+   }
+}
+@media only screen and (min-width: 1200px){
+  .hero {
+    height: 80vh;
+    font-size: 20px;
+  }
+  .hero h1 {
+    margin-top: 150px;
+    font-size: 80px;
+  }
+  .hero img {
+    width: 20%;
+    /* margin-bottom: 200px; */
+   }
+   .find-recipes {
+     height: 17vh;
+     font-size: 40px;
+     padding: 70px;
+   }
+}

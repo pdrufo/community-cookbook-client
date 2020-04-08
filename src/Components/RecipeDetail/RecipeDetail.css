@@ -1,0 +1,47 @@
+.recipe-detail{
+  background-color: #2982C2;  
+  margin-top: -20px;
+}
+.recipe-delete{
+  margin-top: 30px;
+  margin-bottom: 100px;
+  padding: 10px;
+  background-color: #1FC2AF;
+  border-radius: 5px;
+}
+
+.ingredients {
+  border: 1px solid #94B3C9;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #5E7A8E;
+  margin: 10px auto;
+  padding:10px;
+  width: 80%;
+  background-color: white;
+}
+
+.instructions {
+  border: 1px solid #94B3C9;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #5E7A8E;
+  margin: 10px auto;
+  padding: 0 30px 0 0;
+  width: 80%;
+  background-color: white;
+}
+
+.source {
+  border: 1px solid #94B3C9;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #5E7A8E;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  background-color: white;
+}
+@media only screen and (min-width: 768px){ 
+  .recipe-detail{
+    margin-top: -50px;
+  
+  }
+}

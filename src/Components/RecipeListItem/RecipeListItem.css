@@ -1,3 +1,48 @@
-.thumbnail {
-  max-width: 20px;
+.recipe-list-item {
+  border: 1px solid rgb(153, 210, 251);
+  margin: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #2982C2;
+  color: rgb(26, 29, 80);
+  font-family: 'Libre Baskerville', serif;
+
+}  
+
+.recipe-list-details{
+  text-decoration: none;
+  
+}
+
+.recipe-list-item h3 {
+  font-size: 20px;
+
+ 
+} 
+.recipe-list-item p {
+  font-size: 14px;
+  margin-top: -10px;
+} 
+@media only screen and (min-width: 768px){
+  .recipe-list-item {
+    margin: 50px;
+    padding: 20px;
+  }  
+
+  .recipe-list-item h3 {
+    font-size: 24px;
+    
+   
+  } 
+  .recipe-list-item p {
+    font-size: 16px;
+    margin-top: -10px;
+  } 
+
+}
+@media only screen and (min-width: 1200px){
+  .recipe-list-item {
+    width: 10%;
+    margin: 50px auto;
+  }
 }

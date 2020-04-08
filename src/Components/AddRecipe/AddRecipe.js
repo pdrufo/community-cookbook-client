@@ -76,7 +76,7 @@ export default class AddRecipe extends React.Component {
 
         <div className="form-section">
         <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <button type="reset" className='reset-button'>Reset</button>
         </div>
 
     </form>

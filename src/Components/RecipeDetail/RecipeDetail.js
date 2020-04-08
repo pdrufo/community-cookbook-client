@@ -2,6 +2,7 @@ import React from 'react'
 import { findRecipe } from '../../recipe-helpers'
 import ApiContext from '../../ApiContext'
 import config from '../../config'
+import './RecipeDetail.css'
 
 export default class RecipeDetail extends React.Component{
 static defaultProps = {
@@ -51,19 +52,19 @@ render(){
         {recipe.ingredients}
       </p>
     </section>
-    <section>
+    <section className='instructions'>
       <h3>Instructions</h3>
       <ul>
         {recipe.instructions}
       </ul>
     </section>
-    <section>
+    <section className='source'>
       <h3>Source</h3>
       <p>
         {recipe.source}
       </p>
     </section>
-    <button onClick={this.handleClickDelete} className='recipe__delete' type='button'>
+    <button onClick={this.handleClickDelete} className='recipe-delete' type='button'>
       delete
     </button>
   </main>

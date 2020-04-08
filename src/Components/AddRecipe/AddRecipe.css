@@ -1,21 +1,75 @@
 .add-recipe{
   margin-top: 100px;
+  color: rgb(26, 29, 80);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
 }
 form {
   text-align: left;
 }
 
 input, textarea {
-  width: 100%;
-  max-width: 500px;
+  width: 75%;
+  background-color: #2982C2;
 }
 
 
 label {
   display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .form-section {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
+  color: rgb(26, 29, 80);
+  font-family: 'Libre Baskerville', serif;
 }
+button {
+  margin-bottom: 50px;
+  padding: 10px;
+  background-color: #1FC2AF;
+  border-radius: 5px;
+}
+.reset-button {
+  margin-left: 10px;
+}
+::placeholder {
+  color:white;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px){
+  .add-recipe{
+    margin-top: 125px;
+    font-size: 30px;
+  }
+  
+  input, textarea {
+    width: 80%;
+  }
+  label {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ::placeholder {
+    font-size: 14px;
+    vertical-align: top;
+  }
+  
+  button {
+    padding: 30px;
+    background-color: #1FC2AF;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  .reset-button {
+    margin-left: 20px;
+  }
+  .form-section {
+    margin-bottom: 40px;
+  }
+}
+
