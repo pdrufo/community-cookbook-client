@@ -73,3 +73,18 @@ button {
   }
 }
 
+@media only screen and (min-width: 1200px){
+  
+  
+  input, textarea {
+    width: 40%;
+  }
+ 
+
+  
+  button {
+    padding: 20px;
+  }
+  
+}
+

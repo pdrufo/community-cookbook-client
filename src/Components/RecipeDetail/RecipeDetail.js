@@ -8,12 +8,11 @@ export default class RecipeDetail extends React.Component{
 state = {
   recipe: []
 }
-  static defaultProps = {
+static defaultProps = {
   match: {
-    params: {
-
+  params: {
     },
-    onDeleteRecipe: () => {}
+  onDeleteRecipe: () => {}
   }
 }
 static contextType = ApiContext;
@@ -31,10 +30,7 @@ componentDidMount() {
       if (!this.state.recipe) {
         this.setState({recipe: data})
        }
-      
     })
-    
-
     .catch(error => {
       console.error({error})
     })
