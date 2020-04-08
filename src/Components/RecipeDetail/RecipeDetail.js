@@ -5,7 +5,8 @@ import config from '../../config'
 import './RecipeDetail.css'
 
 export default class RecipeDetail extends React.Component{
-static defaultProps = {
+
+  static defaultProps = {
   match: {
     params: {
 
@@ -15,6 +16,20 @@ static defaultProps = {
 }
 static contextType = ApiContext;
 
+componentDidMount() {
+  const {id} = this.props.match.params
+  fetch(`${config.API_ENDPOINT}/recipes/${id}`, {
+    method: 'GET',
+    headers: {
+      'content-type': 'application/json'
+    },
+  })
+    .then(res => res.json())
+
+    .catch(error => {
+      console.error({error})
+    })
+}
 handleClickDelete = e => {
   e.preventDefault()
   const {id} = this.props.match.params

@@ -4,7 +4,7 @@ import './RecipeListItem.css'
 
 export default function RecipeListItem(props) {
   return (
-    <Link to={`/recipes/${props.data.id}`}>
+    <Link to={`/recipes/${props.data.id}`} className="recipe-list-details">
        <div className="recipe-list-item">
         <h3 className='recipe-list-details'>{props.data.title}</h3>
         <p className='recipe-list-details'>{props.data.source}</p>
