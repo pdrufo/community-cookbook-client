@@ -32,10 +32,6 @@ nav ul li {
   transition-duration: 100ms;
   font-family: 'Playfair Display', serif;
   font-size: 18px;
-  /* padding-top: 5px;
-  padding-left: 3px;
-  padding-right: 10px; */
-
 }
 
 .logo:hover {
@@ -50,8 +46,6 @@ nav ul li {
   transition-duration: 100ms;
   border-radius: 2px;
   font-size: 16px;
-  /* padding-top: 3px;
-  padding-bottom: 3px; */
 }
 
 .nav-item:hover {
@@ -61,20 +55,21 @@ nav ul li {
 }
 
 @media only screen and (min-width: 768px){
+
   nav {
     height:75px;
   }
+
   .logo {
     font-size: 30px;
     margin-top: 15px;
     margin-bottom: 10px;
-    
   }
+
   .nav-item {
     font-size: 20px;
-    
-    
   }
+  
   nav ul li {
     margin-top: 20px;
     margin-left: 20px;
