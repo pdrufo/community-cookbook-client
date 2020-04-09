@@ -5,9 +5,11 @@ import config from '../../config'
 import './RecipeDetail.css'
 
 export default class RecipeDetail extends React.Component{
+
 state = {
   recipe: []
 }
+
 static defaultProps = {
   match: {
   params: {
@@ -15,6 +17,7 @@ static defaultProps = {
   onDeleteRecipe: () => {}
   }
 }
+
 static contextType = ApiContext;
 
 componentDidMount() {
@@ -49,7 +52,6 @@ handleClickDelete = e => {
     .then(() => {
       this.context.deleteRecipe(id)
       this.props.history.push(`/recipes`)
-      
     })
     .catch(error => {
       console.error({error})
@@ -57,11 +59,11 @@ handleClickDelete = e => {
 }
 
 render(){
+
   const { recipes=[] } = this.context
   const { id } = this.props.match.params
-  console.log(recipes)
-  console.log(this.context)
   const recipe = findRecipe(recipes, id) || this.state.recipe
+  
   return (
     <main className='recipe-detail'>
     <header>

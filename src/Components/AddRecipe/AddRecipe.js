@@ -10,6 +10,7 @@ export default class AddRecipe extends React.Component {
       push: () => { }
     },
   }
+
   static contextType = ApiContext;
 
   handleSubmit = e => {
@@ -23,14 +24,15 @@ export default class AddRecipe extends React.Component {
   
     if (!newRecipe.title || !newRecipe.ingredients || !newRecipe.instructions || !newRecipe.source) {
       alert('Recipe title, ingredients, instructions, and source are all required')
-    } else {
+    } 
+    else {
       fetch(`${config.API_ENDPOINT}/recipes`, {
         method: 'POST',
         headers: {
           'content-type': 'application/json'
         },
         body: JSON.stringify(newRecipe),
-      })
+        })
         .then(res => {
           if (!res.ok)
             return res.json().then(e => Promise.reject(e))
@@ -47,9 +49,9 @@ export default class AddRecipe extends React.Component {
   }
   render() {
   return(
+
     <section className="add-recipe">
       <h3> Add New Recipe</h3>
-
       <form 
         className="add-recipe-form"
         onSubmit={this.handleSubmit}>
@@ -78,7 +80,6 @@ export default class AddRecipe extends React.Component {
         <button type="submit">Submit</button>
         <button type="reset" className='reset-button'>Reset</button>
         </div>
-
     </form>
   </section>
   )

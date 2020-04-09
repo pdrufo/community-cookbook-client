@@ -2,6 +2,7 @@
   background-color: #2982C2;  
   margin-top: -20px;
 }
+
 .recipe-delete{
   margin-top: 30px;
   margin-bottom: 100px;
@@ -39,9 +40,10 @@
   width: 80%;
   background-color: white;
 }
+
 @media only screen and (min-width: 768px){ 
+
   .recipe-detail{
     margin-top: -50px;
-  
   }
 }

@@ -16,7 +16,6 @@ export default function LandingPage(){
              <p> Start browsing recipes now or add your own</p>
           </Link>
         </section>
-        
       </main>
   );
 }
