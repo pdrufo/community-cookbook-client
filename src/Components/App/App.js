@@ -42,8 +42,10 @@ class App extends React.Component {
   }
 
   handleDeleteRecipe = recipeId => {
+    console.log(this.state.recipes)
+    console.log(typeof(recipeId))
     this.setState({
-      recipes: this.state.recipes.filter(recipe => recipe.id !== recipeId)
+      recipes: this.state.recipes.filter(recipe => recipe.id !== parseInt(recipeId))
     })
   }
   
