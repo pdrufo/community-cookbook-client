@@ -8,16 +8,16 @@ https://community-cookbook-client.pdrufo.now.sh/
 https://github.com/pdrufo/community-cookbook-api
 
 ## Technologies Used
-Front-End: ReactJS | CSS
-Back-End: NodeJS | KnexJS | ExpressJS | PostgreSQL
-Testing: Mocha | Chai
+Front-End: ReactJS | CSS <br/>
+Back-End: NodeJS | KnexJS | ExpressJS | PostgreSQL <br/>
+Testing: Mocha | Chai <br/>
 
 ## Screenshots
 Mobile
 ![Mobile](https://github.com/pdrufo/community-cookbook-client/blob/master/src/Images/mobile.png) 
 
 Tablet
-![Tablet](https://github.com/pdrufo/community-cookbook-client/blob/master/src/Images/tablet.png|) 
+![Tablet](https://github.com/pdrufo/community-cookbook-client/blob/master/src/Images/tablet.png) 
 
 Desktop
 ![Desktop](https://github.com/pdrufo/community-cookbook-client/blob/master/src/Images/desktop.png) 
