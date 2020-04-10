@@ -14,10 +14,10 @@ Testing: Mocha | Chai
 
 ## Screenshots
 Mobile
-![Mobile](https://github.com/pdrufo/community-cookbook-client/blob/master/src/Images/mobile.png | height=600) 
+![Mobile](https://github.com/pdrufo/community-cookbook-client/blob/master/src/Images/mobile.png) 
 
 Tablet
-![Tablet](https://github.com/pdrufo/community-cookbook-client/blob/master/src/Images/tablet.png| height=800) 
+![Tablet](https://github.com/pdrufo/community-cookbook-client/blob/master/src/Images/tablet.png|) 
 
 Desktop
-![Desktop](https://github.com/pdrufo/community-cookbook-client/blob/master/src/Images/desktop.png | height=800) 
+![Desktop](https://github.com/pdrufo/community-cookbook-client/blob/master/src/Images/desktop.png) 
