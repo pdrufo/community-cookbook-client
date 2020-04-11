@@ -46,6 +46,7 @@ nav ul li {
   transition-duration: 100ms;
   border-radius: 2px;
   font-size: 16px;
+  font-weight: bolder;
 }
 
 .nav-item:hover {
@@ -69,7 +70,7 @@ nav ul li {
   .nav-item {
     font-size: 20px;
   }
-  
+
   nav ul li {
     margin-top: 20px;
     margin-left: 20px;

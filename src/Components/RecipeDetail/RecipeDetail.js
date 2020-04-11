@@ -1,5 +1,5 @@
 import React from 'react'
-import { findRecipe } from '../../recipe-helpers'
+import { findRecipe, findIngredients } from '../../recipe-helpers'
 import ApiContext from '../../ApiContext'
 import config from '../../config'
 import './RecipeDetail.css'
@@ -63,7 +63,10 @@ render(){
   const { recipes=[] } = this.context
   const { id } = this.props.match.params
   const recipe = findRecipe(recipes, id) || this.state.recipe
+  // const ingredients = findIngredients(recipes, id)
+  // const recipeIngredients = ingredients.split(',')
   
+
   return (
     <main className='recipe-detail'>
     <header>
@@ -73,6 +76,7 @@ render(){
     <h3>Ingredients</h3>
       <p>
         {recipe.ingredients}
+        {/* {recipeIngredients.map((el,i) => <li key={i}>{el}</li> )} */}
       </p>
     </section>
     <section className='instructions'>

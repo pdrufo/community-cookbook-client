@@ -2,9 +2,11 @@
   margin-top: 20px;
   padding: 40px;
   background-color: #2982C2;
-  color: rgb(26, 29, 80);
+  /* color: rgb(26, 29, 80); */
+  color: black;
   font-family: 'Libre Baskerville', serif;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .hero h1 {
@@ -27,7 +29,10 @@
 .find-recipes a {
   text-decoration: none;
   cursor: pointer;
-  color: white;
+  color: black;
+  font-weight: bold;
+  
+ 
 }
 
 .find-recipes:hover {
@@ -78,4 +83,12 @@
      width: 50%;
      margin: 0 auto;
    }
+
+   .find-recipes a {
+    
+    font-size: 26px;
+    
+    
+   
+  }
 }

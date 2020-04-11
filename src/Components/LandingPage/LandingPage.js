@@ -8,12 +8,12 @@ export default function LandingPage(){
         <section className="hero">
           <h1>Community Cookbook</h1>
           <p>A place where you can browse some of my favorite recipes, whether they are weeknight go-to's or dinner party ready. You can also add some of your favorite recipes to share with our community. </p>
-          <img src= {require('../../Images/home.png')} alt='logo' />
+          <img src= {require('../../Images/home.png')} alt='community cookbook' />
         </section>
 
         <section className="find-recipes">
            <Link to='/recipes' className='hover-effect'>
-             <p> Start browsing recipes now or add your own</p>
+             <h3> Start browsing recipes now or add your own</h3>
           </Link>
         </section>
       </main>
