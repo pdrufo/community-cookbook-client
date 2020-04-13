@@ -1,9 +1,10 @@
 import React from "react";
-import { findRecipe, findIngredients } from "../../recipe-helpers";
+import { findRecipe } from "../../recipe-helpers";
 import ApiContext from "../../ApiContext";
 import config from "../../config";
 import "./RecipeDetail.css";
 
+/**RecipeDetail will fetch a unique recipe and display the full title, ingredients, instructions, and source */
 export default class RecipeDetail extends React.Component {
   state = {
     recipe: [],
@@ -59,11 +60,11 @@ export default class RecipeDetail extends React.Component {
   render() {
     const { recipes = [] } = this.context;
     const { id } = this.props.match.params;
-    const recipe = findRecipe(recipes, id) || this.state.recipe;
-    console.log(typeof(recipe.ingredients))
-    // const ingredients = findIngredients(recipes, id)
-    // const recipeIngredients = ingredients.split(',')
-    // const recipeIngredients = recipe.ingredients.split(',').map((el,i) => <li key={i}>{el}</li> )
+    const recipe = findRecipe(recipes, id) || { ingredients: `Loading...` };
+
+    const recipeIngredients = recipe.ingredients
+      .split(",")
+      .map((el, i) => <li key={i}>{el}</li>);
     return (
       <main className="recipe-detail">
         <header>
@@ -71,15 +72,11 @@ export default class RecipeDetail extends React.Component {
         </header>
         <section className="ingredients">
           <h3>Ingredients</h3>
-          <ul>
-            {/* {recipeIngredients.map((el,i) => <li key={i}>{el}</li> )} */}
-            {/* { recipeIngredients} */}
-          </ul>
-          <p>{recipe.ingredients}</p>
+          <ul className="ingredient-list">{recipeIngredients}</ul>
         </section>
         <section className="instructions">
           <h3>Instructions</h3>
-          <ul>{recipe.instructions}</ul>
+          <ul className="instructions-list">{recipe.instructions}</ul>
         </section>
         <section className="source">
           <h3>Source</h3>

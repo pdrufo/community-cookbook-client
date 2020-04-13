@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./RecipeListItem.css";
 
+/**RecipeListItem will display a clickable box showing the title of each recipe */
 export default function RecipeListItem(props) {
   return (
     <Link to={`/recipes/${props.data.id}`} className="recipe-list-details ">

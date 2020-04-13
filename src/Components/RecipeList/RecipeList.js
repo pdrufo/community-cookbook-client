@@ -3,6 +3,7 @@ import RecipeListItem from "../RecipeListItem/RecipeListItem";
 import "./RecipeList.css";
 import ApiContext from "../../ApiContext";
 
+/**RecipeList displays the dynamic list of recipes stored in the database */
 export default class RecipeList extends React.Component {
   static contextType = ApiContext;
 

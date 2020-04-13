@@ -29,6 +29,7 @@
   padding: 0 30px 0 0;
   width: 80%;
   background-color: white;
+  font-size: 14px;
 }
 
 .source {
@@ -41,8 +42,23 @@
   background-color: white;
 }
 
+.ingredient-list li {
+  list-style-position: inside;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+}
+
 @media only screen and (min-width: 768px) {
   .recipe-detail {
     margin-top: -50px;
   }
+}
+.ingredient-list li {
+  font-size: 18px;
+  width: 400px;
+}
+
+.instructions {
+  font-size: 18px;
 }

@@ -3,6 +3,7 @@ import "./AddRecipe.css";
 import ApiContext from "../../ApiContext";
 import config from "../../config";
 
+/**AddRecipe will allow a user to input values into a form and POST the new recipe to the recipe database */
 export default class AddRecipe extends React.Component {
   static defaultProps = {
     history: {
@@ -57,41 +58,45 @@ export default class AddRecipe extends React.Component {
         <h3> Add New Recipe</h3>
         <form className="add-recipe-form" onSubmit={this.handleSubmit}>
           <div className="form-section">
-            <label htmlFor="recipe-title">Recipe Title
-            <input
-              type="text"
-              name="recipe-title"
-              placeholder="Chicken Picatta"
-              required
-            />
+            <label htmlFor="recipe-title">
+              Recipe Title
+              <input
+                type="text"
+                name="recipe-title"
+                placeholder="Chicken Picatta"
+                required
+              />
             </label>
           </div>
 
           <div className="form-section">
-            <label htmlFor="recipe-ingredients">Add Ingredients
-            <textarea
-              name="recipe-ingredients"
-              rows="5"
-              placeholder="separate ingredients by comma"
-              required
-            />
+            <label htmlFor="recipe-ingredients">
+              Add Ingredients
+              <textarea
+                name="recipe-ingredients"
+                rows="5"
+                placeholder="separate ingredients by comma"
+                required
+              />
             </label>
           </div>
 
           <div className="form-section">
-            <label htmlFor="recipe-instructions">Add instructions
-            <textarea name="recipe-instructions" rows="5" />
+            <label htmlFor="recipe-instructions">
+              Add instructions
+              <textarea name="recipe-instructions" rows="5" />
             </label>
           </div>
 
           <div className="form-section">
-            <label htmlFor="recipe-source">Add Source
-            <textarea
-              name="recipe-source"
-              rows="5"
-              placeholder="e.g. NYTimes Food"
-              required
-            />
+            <label htmlFor="recipe-source">
+              Add Source
+              <textarea
+                name="recipe-source"
+                rows="5"
+                placeholder="e.g. NYTimes Food"
+                required
+              />
             </label>
           </div>
 
