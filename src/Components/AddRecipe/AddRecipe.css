@@ -1,7 +1,7 @@
-.add-recipe{
+.add-recipe {
   margin-top: 100px;
   color: rgb(26, 29, 80);
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 20px;
 }
 
@@ -9,9 +9,12 @@ form {
   text-align: left;
 }
 
-input, textarea {
+input,
+textarea {
   width: 75%;
-  background-color: #2982C2;
+  background-color: #2982c2;
+  display: block;
+  margin: 0 auto;
 }
 
 label {
@@ -24,13 +27,13 @@ label {
   margin-bottom: 10px;
   text-align: center;
   color: rgb(26, 29, 80);
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 button {
   margin-bottom: 50px;
   padding: 10px;
-  background-color: #1FC2AF;
+  background-color: #1fc2af;
   border-radius: 5px;
 }
 
@@ -39,18 +42,18 @@ button {
 }
 
 ::placeholder {
-  color:white;
+  color: white;
   font-size: 12px;
 }
 
-@media only screen and (min-width: 768px){
-
-  .add-recipe{
+@media only screen and (min-width: 768px) {
+  .add-recipe {
     margin-top: 125px;
     font-size: 30px;
   }
-  
-  input, textarea {
+
+  input,
+  textarea {
     width: 80%;
   }
 
@@ -58,15 +61,15 @@ button {
     font-size: 20px;
     margin-bottom: 10px;
   }
-  
+
   ::placeholder {
     font-size: 14px;
     vertical-align: top;
   }
-  
+
   button {
     padding: 30px;
-    background-color: #1FC2AF;
+    background-color: #1fc2af;
     border-radius: 5px;
     font-size: 20px;
   }
@@ -78,18 +81,15 @@ button {
   .form-section {
     margin-bottom: 40px;
   }
-
 }
 
-@media only screen and (min-width: 1200px){
-  
-  input, textarea {
+@media only screen and (min-width: 1200px) {
+  input,
+  textarea {
     width: 40%;
   }
-   
+
   button {
     padding: 20px;
   }
-  
 }
-

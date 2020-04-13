@@ -1,25 +1,23 @@
-import React from 'react'
-import RecipeListItem from '../RecipeListItem/RecipeListItem'
-import './RecipeList.css'
-import ApiContext from '../../ApiContext'
+import React from "react";
+import RecipeListItem from "../RecipeListItem/RecipeListItem";
+import "./RecipeList.css";
+import ApiContext from "../../ApiContext";
 
 export default class RecipeList extends React.Component {
-
   static contextType = ApiContext;
 
   render() {
-    
-    const recipes = this.context.recipes.map((recipe, idx) =>
-    <RecipeListItem key={idx} data={recipe} />
-    );
+    const recipes = this.context.recipes.map((recipe, idx) => (
+      <RecipeListItem key={idx} data={recipe} />
+    ));
 
-  return (
-    <div>
-      <section className='recipe-list'>
-        <h2>All Recipes</h2>
-        {recipes}
-      </section>
-    </div>
-  )
-}
+    return (
+      <div>
+        <section className="recipe-list">
+          <h2>All Recipes</h2>
+          {recipes}
+        </section>
+      </div>
+    );
+  }
 }

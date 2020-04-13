@@ -1,26 +1,25 @@
 .hero {
   margin-top: 20px;
   padding: 40px;
-  background-color: #2982C2;
-  /* color: rgb(26, 29, 80); */
+  background-color: #2982c2;
   color: black;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 14px;
   font-weight: bold;
 }
 
 .hero h1 {
   font-size: 45px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-shadow: 0 1px 0 black;
 }
 
 .hero img {
- width: 50%;
+  width: 50%;
 }
 
 .find-recipes {
-  background-color: #1FC2AF;
+  background-color: #1fc2af;
   padding: 10px;
   margin: 5px;
   transition-duration: 200ms;
@@ -31,18 +30,15 @@
   cursor: pointer;
   color: black;
   font-weight: bold;
-  
- 
 }
 
 .find-recipes:hover {
   transition-duration: 200ms;
-  background-color: #C29F15;
+  background-color: #c29f15;
   box-shadow: 1px 1px 4px grey;
 }
 
-@media only screen and (min-width: 768px){
-
+@media only screen and (min-width: 768px) {
   .hero {
     height: 86vh;
   }
@@ -55,7 +51,7 @@
   .hero img {
     margin-top: 50px;
     width: 20%;
-   }
+  }
 
   .hero p {
     width: 70%;
@@ -63,32 +59,27 @@
   }
 }
 
-@media only screen and (min-width: 1200px){
-
+@media only screen and (min-width: 1200px) {
   .hero {
-    height: 82vh;
+    height: 77vh;
   }
 
   .hero h1 {
-    margin-top: 150px;
+    margin-top: 75px;
     font-size: 50px;
   }
 
   .hero img {
     margin-top: 50px;
     width: 10%;
-   }
+  }
 
   .hero p {
-     width: 50%;
-     margin: 0 auto;
-   }
+    width: 50%;
+    margin: 0 auto;
+  }
 
-   .find-recipes a {
-    
+  .find-recipes a {
     font-size: 26px;
-    
-    
-   
   }
 }

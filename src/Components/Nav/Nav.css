@@ -7,8 +7,8 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  padding:  0 10px;
-  background-color: #C2653C;
+  padding: 0 10px;
+  background-color: #c2653c;
   justify-content: space-evenly;
 }
 
@@ -30,12 +30,12 @@ nav ul li {
   color: white;
   text-decoration: none;
   transition-duration: 100ms;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 18px;
 }
 
 .logo:hover {
-  color: #C2653C;
+  color: #c2653c;
   background-color: white;
   transition-duration: 500ms;
 }
@@ -50,15 +50,14 @@ nav ul li {
 }
 
 .nav-item:hover {
-  color: #C2653C ;
+  color: #c2653c;
   background-color: white;
   transition-duration: 500ms;
 }
 
-@media only screen and (min-width: 768px){
-
+@media only screen and (min-width: 768px) {
   nav {
-    height:75px;
+    height: 75px;
   }
 
   .logo {
