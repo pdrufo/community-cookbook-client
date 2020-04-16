@@ -54,11 +54,21 @@
   .recipe-detail {
     margin-top: -50px;
   }
-}
-.ingredient-list li {
-  font-size: 18px;
-}
 
-.instructions {
-  font-size: 18px;
+  .ingredient-list li {
+    font-size: 18px;
+    margin: 0 100px;
+    width: 70%;
+  }
+
+  .instructions {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .ingredient-list li {
+    font-size: 18px;
+    margin: 0 300px;
+    width: 80%;
+  }
 }
