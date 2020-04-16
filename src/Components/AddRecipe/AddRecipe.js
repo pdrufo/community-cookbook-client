@@ -61,6 +61,7 @@ export default class AddRecipe extends React.Component {
             <label htmlFor="recipe-title">
               Recipe Title
               <input
+                aria-label="input for label"
                 type="text"
                 name="recipe-title"
                 placeholder="Chicken Picatta"
@@ -73,6 +74,7 @@ export default class AddRecipe extends React.Component {
             <label htmlFor="recipe-ingredients">
               Add Ingredients
               <textarea
+                aria-label="input for label"
                 name="recipe-ingredients"
                 rows="5"
                 placeholder="separate ingredients by comma"
@@ -84,7 +86,11 @@ export default class AddRecipe extends React.Component {
           <div className="form-section">
             <label htmlFor="recipe-instructions">
               Add instructions
-              <textarea name="recipe-instructions" rows="5" />
+              <textarea
+                aria-label="input for label"
+                name="recipe-instructions"
+                rows="5"
+              />
             </label>
           </div>
 
@@ -92,6 +98,7 @@ export default class AddRecipe extends React.Component {
             <label htmlFor="recipe-source">
               Add Source
               <textarea
+                aria-label="input for label"
                 name="recipe-source"
                 rows="5"
                 placeholder="e.g. NYTimes Food"
