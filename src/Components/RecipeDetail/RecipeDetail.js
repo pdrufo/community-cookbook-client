@@ -18,7 +18,7 @@ export default class RecipeDetail extends React.Component {
   };
 
   static contextType = ApiContext;
-
+  
   componentDidMount() {
     const { id } = this.props.match.params;
     fetch(`${config.API_ENDPOINT}/recipes/${id}`, {
@@ -37,7 +37,7 @@ export default class RecipeDetail extends React.Component {
         console.error({ error });
       });
   }
-
+  /**Delete the recipe based on id from the database */
   handleClickDelete = (e) => {
     e.preventDefault();
     const { id } = this.props.match.params;
@@ -61,7 +61,7 @@ export default class RecipeDetail extends React.Component {
     const { recipes = [] } = this.context;
     const { id } = this.props.match.params;
     const recipe = findRecipe(recipes, id) || { ingredients: `Loading...` };
-
+    /**split the string of ingredients after each comma so we can display each ingredient on a bulleted list */
     const recipeIngredients = recipe.ingredients
       .split(",")
       .map((el, i) => <li key={i}>{el}</li>);
